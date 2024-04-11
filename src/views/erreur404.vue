@@ -1,6 +1,8 @@
 <template>
 
-    <h1> ERREUR , AUCUNE PAGE TROUVER</h1>
+    <h1> ERREUR , Page inconnue</h1>
+
+    <a href="/">Retour à l'accueil</a>
 
 
 </template>
