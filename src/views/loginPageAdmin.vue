@@ -45,17 +45,15 @@
     color: #ff3f34;
     margin-top: 20px;
     margin-bottom: 20px;
+    letter-spacing: 20px; 
   }
   
   .menu {
     display: flex;
     align-items: center;
-    margin-bottom: 0px;
+    justify-content: center;
+    padding-left: 20px; 
     background-color: #2c2c2c;
-  }
-  
-  h1 {
-    text-align: center;
   }
   
   .input-field {
@@ -80,16 +78,18 @@
   .login-button {
     width: 150px;
     height: 40px;
-    background-color: #ff3f34;
-    color: #fff;
+    background-color: #ebe8e8;
+    color: #000000;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 20px;
+    font-size: 30px;
     cursor: pointer;
     margin-top: 10px; 
+    margin-bottom: 10px;
   }
   
   .login-button:hover {
-    background-color: #e2361c;
+    background-color: #ffffff;
   }
   </style>
+  
