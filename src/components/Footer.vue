@@ -1,7 +1,7 @@
 <template>
     <div class="footer-container">
         <p> </p>
-        <a class="logo-footer" href="/"><img src="../assets/img/icone/logocream.png"></a>
+        <a class="logo-footer" href="/"><img src="https://hackathon-kud9.onrender.com/assets/img/icone/logocream.png"></a>
     </div>
     
 

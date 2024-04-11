@@ -1,25 +1,53 @@
 <template>
-    <header class="vue-header">
+    <header class="vue-header" :style="{ backgroundColor: headerBgColor[$route.path]}" >
         <div class="nav-container">
-            <nav class="nav">
-                <a class="logo-header" href="/"><img src="../assets/img/icone/logodarkbrown.png"></a>
+            <nav class="nav"> 
+                <a class="logo-header" href="/">
+                    <img v-if="headerTextColor[$route.path] == '#49290B'" :src="iconColor.darkBrown" :alt="iconColor.darkBrownAlt">
+                    <img v-else :src="iconColor.cream" :alt="iconColor.creamAlt">
+                </a>
                 <ul>
-                    <a href='/projects'><p>PROJETS</p></a>
-                    <a href='/biopage'><p>BIO</p></a>
-                    <a href='/loginPageChoice'><p>LOGIN</p></a>
+                    <a href='/projects' :style="{ color: headerTextColor[$route.path] }"><p>PROJETS</p></a>
+                    <a href='/bio' :style="{ color: headerTextColor[$route.path] }"><p>BIO</p></a>
+                    <a href='/loginPageChoice' :style="{ color: headerTextColor[$route.path] }"><p>LOGIN</p></a>
                 </ul>
             </nav>
         </div>
     </header>
 </template>
 
-<style scoped>
+<script>
+
+export default {
+    data() {
+        return {
+            headerTextColor: {
+                '/': '#49290B',
+                '/bio': '#FFD39F',
+            },
+            headerBgColor: {
+                '/' : '#FFD39F',
+                '/bio': '#49290B',
+            },
+            iconColor: {
+                cream: 'https://hackathon-kud9.onrender.com/assets/img/icone/logocream.png',
+                creamAlt: 'cream icon',
+                darkBrown: 'https://hackathon-kud9.onrender.com/assets/img/icone/logodarkbrown.png',
+                darkBrownAlt: 'darkbrown icon'
+            }
+        
+        }
+    },
+  
+};
+</script>
+
+<style>
 
 * {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-    background-color: #FFD39F;
 }
 .nav-container {
     max-width: 1920px;
@@ -45,7 +73,6 @@
             justify-content: right;
             padding-top: 2%;
             a {
-                color: #49290B;
                 font-weight: 700;
                 font-size: 25px;
                 text-decoration: none;
@@ -60,7 +87,7 @@
                 transition: .1s;
             }
             p:hover {
-                border-bottom: 3px solid #49290B
+                border-bottom: 3px solid;
             }
         }
 

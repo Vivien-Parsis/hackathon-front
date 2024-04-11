@@ -1,4 +1,5 @@
 <template>
+  <Header :headerTextColor="headerTextColor" :headerBgColor="headerBgColor"></Header>
   <div class="header-container">
     <div class="header-text">
       <h1 id="photographe">PHOTOGRAPHE</h1>
@@ -7,59 +8,72 @@
         <a href="#projects"><h1 id="downarrow">▼</h1></a>
       </div>
     </div>
-    
   </div>
-  <div class="projects-container" id="projects">
-    <h1>différents projets</h1>
-    <a class="aymerik" href="/projects"><h2>AYMERIK</h2></a>
-    <a class="misha" href="/projects"><h2>MISHA</h2></a>
-    <a class="flavio" href="/projects"><h2>FLAVIO</h2></a>
-    <a class="mathis" href="/projects"><h2>MATHIS</h2></a>
-  </div>
-  <div class="informations-container">
-    <div id="leftside">
-      <div class="bio-redirection">
-        <h2>BIO</h2>
-        <a class="redirect-button" href="/bioPage"><p>Follow here</p></a>
+  <div class="main">
+    <div class="projects-container" id="projects">
+      <h1>différents projets</h1>
+      <a class="aymerik" href="/projects"><h2>AYMERIK</h2></a>
+      <a class="misha" href="/projects"><h2>MISHA</h2></a>
+      <a class="flavio" href="/projects"><h2>FLAVIO</h2></a>
+      <a class="mathis" href="/projects"><h2>MATHIS</h2></a>
+    </div>
+    <div class="informations-container">
+      <div id="leftside">
+        <div class="bio-redirection">
+          <h2>BIO</h2>
+          <a class="redirect-button" href="/bioPage"><p>Follow here</p></a>
+        </div>
+        
+        <div class="contact-container">
+          <h2>CONTACT</h2>
+          <div id="email-container">
+            <h3 id="email-title">Email</h3>
+          </div>
+          <div id="number-container">
+            <h3 id="number-title">Numéro</h3>
+          </div>
+          <div id="linkedin-container">
+            <h3 id="linkedin-title">Linkedin</h3>
+          </div>
+        </div>
       </div>
       
-      <div class="contact-container">
-        <h2>CONTACT</h2>
-        <div id="email-container">
-          <h3 id="email-title">Email</h3>
-        </div>
-        <div id="number-container">
-          <h3 id="number-title">Numéro</h3>
-        </div>
-        <div id="linkedin-container">
-          <h3 id="linkedin-title">Linkedin</h3>
+      <div class="equipments-informations">
+        <h2>MATERIEL</h2>
+        <div class="equipments-informations-container">
+          <h3>APPAREIL 1</h3>
+          <p>Canon EOS Rp</p>
+          <h3>APPAREIL 2</h3>
+          <p>Leica Q2</p>
+          <h3>OBJECTIF 1</h3>
+          <p>55-200mm t/4.5-6.3</p>
+          <h3>OBJECTIF 2</h3>
+          <p>15-45mm t/3.5-6</p>
+          <h3>FLASH</h3>
+          <p>Canon Speedlite EL-5</p>
         </div>
       </div>
     </div>
-    
-    <div class="equipments-informations">
-      <h2>MATERIEL</h2>
-      <div class="equipments-informations-container">
-        <h3>APPAREIL 1</h3>
-        <p>Canon EOS Rp</p>
-        <h3>APPAREIL 2</h3>
-        <p>Leica Q2</p>
-        <h3>OBJECTIF 1</h3>
-        <p>55-200mm t/4.5-6.3</p>
-        <h3>OBJECTIF 2</h3>
-        <p>15-45mm t/3.5-6</p>
-        <h3>FLASH</h3>
-        <p>Canon Speedlite EL-5</p>
-      </div>
-      
-    </div>
-    
-
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
-
+  import Header from '../components/Header.vue';
+  import Footer from '../components/Footer.vue';
+  
+  export default {
+    components: {
+      Header,
+      Footer,
+    },
+    data() {
+      return {
+        headerTextColor: '#49290B',
+        headerBgColor: '#FFD39F',
+      };
+    },
+  };
 </script>
 
 
@@ -70,8 +84,6 @@
     padding: 0;
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
-    background-color: #49290B;
-
   }
 
   .header-container {
@@ -117,9 +129,10 @@
     }
   }
 
-
-
-
+  .main {
+    width: 100%;
+    background-color: #49290B;
+  }
 
   .projects-container {
     max-width: 1920px;
@@ -304,6 +317,7 @@
       #independant {
         margin-top: -90px;
         letter-spacing: 7px;
+        -webkit-text-stroke: 4px #49290B;
       }
 
     }
@@ -382,7 +396,7 @@
         font-size: 75px;
         margin-top: -55px;
         letter-spacing: 8px;
-        -webkit-text-stroke: 4px #49290B;
+        -webkit-text-stroke: 3px #49290B;
 
       }
 
@@ -471,7 +485,7 @@
         margin-top: -27px;
         margin-left: 1px;
         letter-spacing: 5.5px;
-        -webkit-text-stroke: 2px #49290B;
+        -webkit-text-stroke: 1px #49290B;
 
       }
 
