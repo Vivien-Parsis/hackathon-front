@@ -79,7 +79,7 @@ export default {
             justify-content: right;
             padding-top: 2%;
             a {
-                font-weight: 700;
+                font-weight: 600;
                 font-size: 25px;
                 text-decoration: none;
                 margin: 0 25px 0 0;

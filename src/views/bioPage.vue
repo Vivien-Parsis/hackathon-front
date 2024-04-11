@@ -73,8 +73,8 @@
       width: 100%;
       color: #FFD39F;
       font-size: 300px;
-      letter-spacing: 430px;
-      text-indent: 280px;
+      letter-spacing: 330px;
+      text-indent: 380px;
     }
     .beginning-container, .studies-container {
       width: 40%;
