@@ -52,16 +52,11 @@
   
   .Admin-link p,
   .User-link p {
-    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 90px;
+    font-size: 30px;
   }
   
-  p:hover {
-    box-shadow: inset 800px 0 0 0 #FFD39F;
-    color: #49290B;
-  }
   
   .footer-container {
     margin: 0;
