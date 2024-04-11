@@ -39,19 +39,24 @@
 @media (max-width: 1919px) {
     .footer-container {
         margin: 60px auto auto auto ;
+        p {
+            border: 1.2px solid #FFD39F;
+        }
     }
 }
 @media (max-width: 1279px) {
     .footer-container {
         margin: 40px auto auto auto ;
+        p {
+            border: 1px solid #FFD39F;
+        }
     }
 }
 @media (max-width: 799px) {
     .footer-container {
         margin: 20px auto auto auto ;
         p {
-            border: 1px solid #FFD39F;
-
+            border: .8px solid #FFD39F;
         }
     }
 }
