@@ -36,3 +36,7 @@ Site de portefolio
 ## Auteur
 
 - [Vivien PARSIS](https://github.com/Vivien-Parsis)
+- [Adam MALEK](https://github.com/Beuhnnyto)
+- [Adam DAUVE](https://github.com/Karlamilyi)
+- [Tanguy MERCIER](https://github.com/MercierTanguy)
+- [Aris ABROUS](https://github.com/Zongotripledozo)
