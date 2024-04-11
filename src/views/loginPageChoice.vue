@@ -9,7 +9,7 @@
     </div>
   </template>
   
-  <style>
+  <style scoped>
   .link-container {
     display: flex;
     justify-content: space-around;

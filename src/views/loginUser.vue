@@ -10,7 +10,7 @@
                 <input type="password">
                 <button type="submit" class="signup">LOGIN</button>
             </form>
-            <hr></hr>
+            <hr>
             <form class="signup-form">
                 <h2>SIGNUP</h2>
                 <h3>Username</h3>

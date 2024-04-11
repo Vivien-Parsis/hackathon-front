@@ -9,7 +9,7 @@
                 <ul>
                     <a href='/projects' :style="{ color: headerTextColor[$route.path] }"><p>PROJETS</p></a>
                     <a href='/bio' :style="{ color: headerTextColor[$route.path] }"><p>BIO</p></a>
-                    <a href='/loginPageChoice' :style="{ color: headerTextColor[$route.path] }"><p>LOGIN</p></a>
+                    <a href='/loginChoice' :style="{ color: headerTextColor[$route.path] }"><p>LOGIN</p></a>
                 </ul>
             </nav>
         </div>
