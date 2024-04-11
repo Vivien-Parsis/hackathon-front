@@ -27,12 +27,8 @@
             Après de nombreuses expériences riches en apprentissage, j'en suis venu à la conclusion que ce que je préférais dans la photographie était le portrait. Capturer l'image même du visage de la personne afin de la mettre en valeur est pour moi une véritable passion. À travers de mon portfolio, vous y verrez les différents aspects de cet art et de mon travail.
           </p>
         </div>
+        <Footer></Footer>
       </div>
-
-
-
-
-      <Footer></Footer>
     </div>
 </template>
 
@@ -113,6 +109,10 @@
         font-size:35px;
       }
     }
+    .footer-container {
+      width: 100%;
+      margin: 2% auto auto auto;
+    }
   }
 }
 
@@ -149,6 +149,10 @@
         }
       }
     }
+  }
+  .footer-container {
+    width: 100%;
+    margin: auto;
   }
 }
 @media (max-width: 1279px) {
@@ -197,7 +201,7 @@
       }
       .beginning-container, .studies-container {
         height: 257px;
-        border: 3px solid #FFD39F;
+        border: 2px solid #FFD39F;
         h2 {
           font-size: 20px;
           padding: .1em;
@@ -208,7 +212,7 @@
         }
       }
       .nowadays-container {
-        border: 3px solid #FFD39F;
+        border: 2px solid #FFD39F;
         h2 {
           font-size: 20px;
           padding: .1em;
