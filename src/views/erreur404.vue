@@ -1,14 +1,12 @@
 <template>
+	<h1>ERREUR, Page inconnue</h1>
 
-    <h1> ERREUR , AUCUNE PAGE TROUVER</h1>
-
-
+	<a href="/">Retour à l'accueil</a>
 </template>
 
 <style scoped>
-
-h1{
-    text-align: center;
-    margin: auto;
+h1 {
+	text-align: center;
+	margin: auto;
 }
 </style>
