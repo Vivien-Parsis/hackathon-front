@@ -56,7 +56,7 @@
     .footer-container {
         margin: 20px auto auto auto ;
         p {
-            border: .8px solid #FFD39F;
+            border: px solid #FFD39F;
         }
     }
 }
