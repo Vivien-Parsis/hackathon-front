@@ -5,8 +5,8 @@
                 <a class="logo-header" href="/"><img src="../assets/img/icone/logodarkbrown.png"></a>
                 <ul>
                     <a href='/projects'><p>PROJETS</p></a>
-                    <a href='/biopage'><p>BIO</p></a>
-                    <a href='/loginPageChoice'><p>LOGIN</p></a>
+                    <a href='/bio'><p>BIO</p></a>
+                    <a href='/loginChoice'><p>LOGIN</p></a>
                 </ul>
             </nav>
         </div>
