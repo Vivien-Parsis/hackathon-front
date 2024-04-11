@@ -1,4 +1,5 @@
 <template>
+    <Header :headerTextColor="headerTextColor" :headerBgColor="headerBgColor"></Header>
     <div class="link-container">
       <a href="/loginAdmin" class="Admin-link">
         <p>ESPACE ADMIN</p>
@@ -7,13 +8,17 @@
         <p>ESPACE VISITEUR</p>
       </a>
     </div>
+    <Footer></Footer>
   </template>
   
   <style scoped>
+
+*{
+    background-color: #49290B;
+}
   .link-container {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px; 
   }
   
   .Admin-link,
@@ -37,4 +42,26 @@
     box-shadow: inset 800px 0 0 0 #FFD39F;
     color: #49290B;
   }
+
+div.footer-container{
+    margin: 0px;
+}
   </style>
+<script>
+
+import Header from '../components/Header.vue';
+import Footer from '../components/Footer.vue';
+  
+  export default {
+    components: {
+      Header,
+      Footer,
+    },
+    data() {
+      return {
+        headerTextColor: '#49290B',
+        headerBgColor: '#FFD39F',
+      };
+    },
+  };
+</script>

@@ -1,4 +1,5 @@
 <template>
+    <Header></Header>
     <div class="main-content">
         <h1>ESPACE VISITEUR</h1>
         <div class="form-container">
@@ -21,6 +22,7 @@
             </form>
         </div>
     </div>
+    <Footer></Footer>
 </template>
 
 <style scoped>
@@ -58,7 +60,7 @@ h1 {
 .signup-form {
     width: 300px;
     margin: 20px;
-    height: 320px; 
+    height: 350px; 
 }
 
 h2  {
@@ -108,6 +110,27 @@ hr {
     height: 100%; 
 }
 
+div.footer-container{
+    margin: 0px;
+}
 
 </style>
+
+<script>
+import Header from '../components/Header.vue';
+import Footer from '../components/Footer.vue';
+
+export default {
+    components: {
+      Header,
+      Footer,
+    },
+    data() {
+      return {
+        headerTextColor: '#FFD39F',
+        headerBgColor: '#FFD39F',
+      };
+    },
+  };
+</script>
 

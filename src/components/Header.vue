@@ -24,10 +24,16 @@ export default {
             headerTextColor: {
                 '/': '#49290B',
                 '/bio': '#FFD39F',
+                '/loginChoice': '#FFD39F',
+                '/projects': '#FFD39F',
+                '/loginUser': '#FFD39F',
             },
             headerBgColor: {
                 '/' : '#FFD39F',
                 '/bio': '#49290B',
+                '/loginChoice': '#49290B',
+                '/projects': '#49290B',
+                '/loginUser':'#49290B',
             },
             iconColor: {
                 cream: 'https://hackathon-kud9.onrender.com/assets/img/icone/logocream.png',
