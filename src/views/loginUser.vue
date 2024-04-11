@@ -1,22 +1,22 @@
 <template>
     <Header></Header>
     <div class="main-content">
-        <h1>ESPACE VISITEUR</h1>
         <div class="form-container">
+            <h1>ESPACE VISITEUR</h1>
             <form class="login-form">
                 <h2>LOGIN</h2>
-                <h3>Username</h3>
+                <h3>username</h3>
                 <input type="text">
-                <h3>Password</h3>
+                <h3>password</h3>
                 <input type="password">
-                <button type="submit" class="signup">LOGIN</button>
+                <button type="submit" class="login">LOGIN</button>
             </form>
             <hr>
             <form class="signup-form">
                 <h2>SIGNUP</h2>
-                <h3>Username</h3>
+                <h3>username</h3>
                 <input type="text">
-                <h3>Password</h3>
+                <h3>password</h3>
                 <input type="password">
                 <button type="submit" class="signup">SIGNUP</button>
             </form>
@@ -32,89 +32,179 @@
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
     background-color: #49290B;
-    
-}
-
-h1 {
-    font-family: "Poppins", sans-serif;
-    width: 100%;
-    margin-bottom: 50px;
-    letter-spacing: 20px; 
+    color: #FFD39F;
 }
 
 .main-content {
-    background-color: #49290B;
-    color: #FFD39F;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    padding: 50px 0;
+    padding-top: 3%;
+    .form-container {
+        max-width: 1920px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        h1 {
+            width: 100%;
+            margin-bottom: 5%;
+            letter-spacing: 25px; 
+            text-indent: 25px;
+        }
+        .login-form,.signup-form {
+            margin-bottom: 30px;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h2  {
+            margin: 0 0 45px 0;
+            font-size: 30px;
+            font-weight: 500;
+        }
+        h3 {
+            margin: 0 0 3px 0;
+            font-size: 16px;
+            font-weight: 300;
+        }
+        input[type="text"], input[type="password"] {
+            width: 60%;
+            margin-bottom: 20px; 
+            padding: 1em 1em;
+            color: #49290B;
+            border: none;
+            background-color: #fff; 
+        }
+        button.signup, button.login {
+            width: 45%;
+            padding: .2em;
+            border-radius: 2em;
+            border: none;
+            cursor: pointer;
+            background-color: #FFD39F;
+            color: #49290B;
+            font-size: 26px;
+            letter-spacing: 4px;
+            text-indent: 4px;
+            font-weight: 600;
+            transition: .1s;
+        }
+        button.signup:hover, button.login:hover{
+            color: #FFD39F;
+            background-color: #49290B;
+            border: 1px solid #FFD39F;
+        }
+        button.signup:active, button.login:active{
+            background-color: #FFD39F;
+        }
+        hr {
+            border: 1px solid white;
+        }
+    }
 }
 
-.form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+@media (max-width: 1919px) {
+    .main-content {
+        padding-top: 2%;
+        .form-container {
+            max-width: 1280px ;
+            h1 {
+                margin-bottom: 4%;
+                letter-spacing: 20px; 
+                text-indent: 20px;
+                font-size: 26px;
+            }
+            .login-form, .signup-form {
+                margin-bottom: 30px;
+                h2 {
+                    margin: 0 0 28px 0;
+                    font-size: 26px;
+                }
+                h3 {
+                    margin: 0 0 2px 0;
+                    font-size: 14px;
+                }
+                input[type="text"], input[type="password"] {
+                    margin-bottom: 15px;
+                    padding: .7em 1em;
+                }
+                button.signup, button.login {
+                    font-size: 18px;
+                    letter-spacing: 4px;
+                    text-indent: 4px;
+                }
+            }
+        }
+    }
 }
-
-.login-form,
-.signup-form {
-    width: 300px;
-    margin: 20px;
-    height: 350px; 
+@media (max-width: 1279px) {
+    .main-content {
+        padding-top: 2%;
+        .form-container {
+            max-width: 800px ;
+            h1 {
+                margin-bottom: 4%;
+                letter-spacing: 15px; 
+                text-indent: 15px;
+                font-size: 18px;
+            }
+            .login-form, .signup-form {
+                margin-bottom: 30px;
+                h2 {
+                    margin: 0 0 20px 0;
+                    font-size: 20px;
+                }
+                h3 {
+                    margin: 0 0 2px 0;
+                    font-size: 12px;
+                }
+                input[type="text"], input[type="password"] {
+                    margin-bottom: 15px;
+                    padding: .4em 1em;
+                }
+                button.signup, button.login {
+                    font-size: 15px;
+                    letter-spacing: 2px;
+                    text-indent: 2px;
+                }
+            }
+        }
+    }
 }
-
-h2  {
-    margin: 0;
-    margin-bottom: 20px;
-    margin-top:20px;
+@media (max-width: 799px) {
+    .main-content {
+        padding-top: 2%;
+        .form-container {
+            max-width: 360px ;
+            h1 {
+                margin-bottom: 4%;
+                letter-spacing: 8px; 
+                text-indent: 8px;
+                font-size: 12px;
+            }
+            .login-form, .signup-form {
+                margin-bottom: 30px;
+                h2 {
+                    margin: 0 0 10px 0;
+                    font-size: 15px;
+                }
+                h3 {
+                    margin: 0;
+                    font-size: 9px;
+                }
+                input[type="text"], input[type="password"] {
+                    margin-bottom: 15px;
+                    padding: 0 .8em;
+                }
+                button.signup, button.login {
+                    font-size: 8px;
+                    letter-spacing: 1px;
+                    text-indent: 1px;
+                }
+            }
+        }
+    }
 }
-
-h3 {
-    margin: 0;
-    margin-bottom: 20px;
-    margin-top:20px;
-    font-size: 14px;
-}
-
-input[type="text"],
-input[type="password"] {
-    width: 100%;
-    margin-bottom: 20px; 
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #FFD39F;
-    background-color: #fff; 
-}
-
-button.signup {
-    width: 50%;
-    margin-bottom: 10px;
-    padding: 6px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    background-color: #FFD39F;
-    color: #49290B;
-}
-
-hr {
-    border: none;
-    margin-left: 15px;
-    border-left: 10px solid #fff; 
-    border-top: 85px solid #fff; 
-    border-bottom: 270px solid #fff; 
-    color: #333;
-    overflow: visible;
-    text-align: center;
-    width: 3px; 
-    height: 100%; 
-}
-
-div.footer-container{
-    margin: 0px;
-}
-
 </style>
 
 <script>
