@@ -21,7 +21,7 @@
       <div id="leftside">
         <div class="bio-redirection">
           <h2>BIO</h2>
-          <a class="redirect-button" href="/bioPage"><p>Follow here</p></a>
+          <a class="redirect-button" href="/bio"><p>Follow here</p></a>
         </div>
         
         <div class="contact-container">
