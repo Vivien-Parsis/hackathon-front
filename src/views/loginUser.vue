@@ -21,8 +21,8 @@
                 <button type="submit" class="signup">SIGNUP</button>
             </form>
         </div>
+        <Footer></Footer>
     </div>
-    <Footer></Footer>
 </template>
 
 <style scoped>
@@ -32,6 +32,7 @@
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
     background-color: #49290B;
+    
 }
 
 h1 {
