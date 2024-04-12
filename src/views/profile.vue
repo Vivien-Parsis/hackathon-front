@@ -44,7 +44,7 @@
           text-indent: 40px;
           font-weight: 500;
           font-size: 35px;
-          color: #ff3f34;
+          color: #FFD39F;
         }
         .login-form {
           display: flex;
@@ -60,7 +60,7 @@
             border-radius: 5px;
             font-size: 26px;
             font-weight: 500;
-            color: #fff;
+            color: #292929;
           }
           h2 {
             font-weight: 300;
