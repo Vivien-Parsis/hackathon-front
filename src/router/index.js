@@ -7,7 +7,7 @@ import loginPageChoice from '../views/loginPageChoice.vue'
 import projects from '../views/projects.vue'
 import projectsd from '../views/projectsd.vue'
 import Erreur404 from '../views/erreur404.vue'
-
+import profile from '../views/profile.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -22,7 +22,7 @@ const router = createRouter({
     { path: '/loginChoice', component: loginPageChoice, name: 'LoginPageChoice'},
     { path: '/projects', component: projects, name: 'Projects'},
     { path: '/projects/:name', component: projectsd, name: 'Projectsd'},
-
+    { path: '/profile', component: profile, name: 'Profile'},
     {
       path: '/about',
       name: 'about',
