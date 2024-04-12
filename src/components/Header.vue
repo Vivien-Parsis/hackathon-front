@@ -34,8 +34,10 @@
 					<a
 						href="/loginChoice"
 						:style="{ color: headerTextColor[$route.path] }"
+						v-if="!LoggedIn"
 						><p>LOGIN</p></a
 					>
+					
 				</ul>
 			</nav>
 		</div>
@@ -67,7 +69,15 @@ export default {
 					"https://hackathon-kud9.onrender.com/assets/img/icone/logodarkbrown.png",
 				darkBrownAlt: "darkbrown icon",
 			},
+			loggedIn: localStorage.getItem("loggedIn") === "true",
 		};
+	},
+	methods: {
+		logout() {
+			localStorage.removeItem("loggedIn");
+			this.loggedIn = false;
+
+		},
 	},
 };
 </script>

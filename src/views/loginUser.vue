@@ -257,6 +257,7 @@ export default {
 				})
 				.then((res) => {
 					console.log(res);
+					localStorage.setItem("loggedIn", true);
 				})
 				.catch((err) => {
 					console.log(err);
@@ -270,6 +271,7 @@ export default {
 				})
 				.then((res) => {
 					console.log(res);
+					localStorage.setItem("loggedIn", true);
 				})
 				.catch((err) => {
 					console.log(err);
