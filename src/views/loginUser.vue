@@ -4,7 +4,10 @@
 		<div class="form-container">
 			<h1>ESPACE VISITEUR</h1>
 
-            <form class="login-form" @submit.prevent="login">
+			<form
+				class="login-form"
+				@submit.prevent="login"
+			>
 				<h2>LOGIN</h2>
 				<h3>username</h3>
 				<input type="text" />
@@ -18,7 +21,10 @@
 				</button>
 			</form>
 			<hr />
-			<form class="signup-form" @submit.prevent="signup">
+			<form
+				class="signup-form"
+				@submit.prevent="signup"
+			>
 				<h2>SIGNUP</h2>
 				<h3>username</h3>
 				<input type="text" />
