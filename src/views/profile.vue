@@ -5,14 +5,13 @@
 	></Header>
 	<div class="container">
         <div class="content">
-          <h1 class="admin-title">ESPACE PROFILE</h1>
+          <h1 class="admin-title">ESPACE PROFIL</h1>
           <form class="login-form" @submit.prevent="update">
             <h2>username</h2>
             <input type="text" class="input-field">
-            <h2>password</h2>
-            <input type="password" class="input-field">
-            <button type="submit" class="login-button">UPDATE</button>
-            <button type="submit" class="login-button">DELETE</button>
+            <button type="submit" class="login-button">Mettre à jour</button>
+            <button type="submit" class="login-button">Supprimer</button>
+            <button type="submit" class="login-button">Déconnexion</button>
           </form>
         </div>
     </div>
