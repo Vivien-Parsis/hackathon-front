@@ -1,5 +1,8 @@
 # hackathon_front - a simple portefolio in Vue and Vite
 Site de portefolio
+## Maquette
+
+figma : https://www.figma.com/file/R99H288y5f2E1nIYIy8sXq/Portfolio?type=design&node-id=23%3A13&mode=design&t=0zTRjzHu4bGahi43-1
 
 ## Fonctionnalité principales
 - portefolio
