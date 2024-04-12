@@ -118,60 +118,7 @@
 	margin: auto;
 }
 
-@media (max-width: 1919px) {
-	.link-container {
-		padding: 9.5em 3em;
-		.login-buttons {
-			max-width: 1280px;
-			#admin-link,
-			#user-link {
-				padding: 1.2em 0em;
-				border: 1.5px solid #ffd39f;
-				h3 {
-					font-size: 15px;
-					letter-spacing: 18px;
-					text-indent: 18px;
-				}
-			}
-		}
-	}
-}
-@media (max-width: 1279px) {
-	.link-container {
-		padding: 6em 2em;
-		.login-buttons {
-			max-width: 800px;
-			#admin-link,
-			#user-link {
-				padding: 0.7em 0em;
-				border: 1.2px solid #ffd39f;
-				h3 {
-					font-size: 10px;
-					letter-spacing: 13px;
-					text-indent: 13px;
-				}
-			}
-		}
-	}
-}
-@media (max-width: 799px) {
-	.link-container {
-		padding: 4em 1em;
-		.login-buttons {
-			max-width: 360px;
-			#admin-link,
-			#user-link {
-				padding: 0.4em 0em;
-				border: 1px solid #ffd39f;
-				h3 {
-					font-size: 5px;
-					letter-spacing: 6px;
-					text-indent: 6px;
-				}
-			}
-		}
-	}
-}
+
 </style>
 
 <script>
