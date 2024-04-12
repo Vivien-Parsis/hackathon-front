@@ -34,7 +34,14 @@
 					<a
 						href="/loginChoice"
 						:style="{ color: headerTextColor[$route.path] }"
+						v-if="!LoggedIn"
 						><p>LOGIN</p></a
+					>
+					<a
+						href="/profile"
+						:style="{ color: headerTextColor[$route.path] }"
+						v-if="LoggedIn"
+						><p>PROFIL</p></a
 					>
 				</ul>
 			</nav>
@@ -57,6 +64,7 @@ export default {
 				"/projects/rachid": "#FFD39F",
 				"/projects/mathis": "#FFD39F",
 				"/loginUser": "#FFD39F",
+				"/profile": "#FFD39F",
 			},
 			headerBgColor: {
 				"/": "#FFD39F",
@@ -69,6 +77,7 @@ export default {
 				"/projects/rachid": "#49290B",
 				"/projects/mathis": "#49290B",
 				"/loginUser": "#49290B",
+				"/profile": "#49290B",
 			},
 			iconColor: {
 				cream: "https://hackathon-kud9.onrender.com/assets/img/icone/logocream.png",
@@ -77,7 +86,14 @@ export default {
 					"https://hackathon-kud9.onrender.com/assets/img/icone/logodarkbrown.png",
 				darkBrownAlt: "darkbrown icon",
 			},
+			loggedIn: localStorage.getItem("loggedIn") === "true",
 		};
+	},
+	methods: {
+		logout() {
+			localStorage.removeItem("loggedIn");
+			this.loggedIn = false;
+		},
 	},
 };
 </script>

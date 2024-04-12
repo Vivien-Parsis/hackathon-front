@@ -5,7 +5,7 @@
       <div class="container">
         <div class="content">
           <h1 class="admin-title">ESPACE ADMIN</h1>
-          <form class="login-form">
+          <form class="login-form" @submit.prevent="login">
             <h2>username</h2>
             <input type="text" class="input-field">
             <h2>password</h2>
@@ -219,3 +219,32 @@
     
     
   </style>
+
+<script>
+import axios from "axios";
+
+export default {
+	data() {
+		return {
+			username: "",
+			password: "",
+		};
+	},
+  methods:{
+    login() {
+			axios
+				.post("https://hackathon-kud9.onrender.com/user/signin", {
+					username: this.username,
+					password: this.password,
+				})
+				.then((res) => {
+					console.log(res);
+				})
+				.catch((err) => {
+					console.log(err);
+				});
+		},
+  }
+};
+
+</script>
