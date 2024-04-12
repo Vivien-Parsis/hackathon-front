@@ -3,22 +3,19 @@
 		:headerTextColor="headerTextColor"
 		:headerBgColor="headerBgColor"
 	></Header>
-	<div class="link-container">
-		<div class="login-buttons">
-			<a
-				id="admin-link"
-				href="/loginAdmin"
-			>
-				<h3>ESPACE ADMIN</h3>
-			</a>
-			<a
-				id="user-link"
-				href="/loginUser"
-			>
-				<h3>ESPACE VISITEUR</h3>
-			</a>
-		</div>
-	</div>
+	<div class="container">
+        <div class="content">
+          <h1 class="admin-title">ESPACE PROFILE</h1>
+          <form class="login-form" @submit.prevent="update">
+            <h2>username</h2>
+            <input type="text" class="input-field">
+            <h2>password</h2>
+            <input type="password" class="input-field">
+            <button type="submit" class="login-button">UPDATE</button>
+            <button type="submit" class="login-button">DELETE</button>
+          </form>
+        </div>
+    </div>
 	<div>
 		<Footer></Footer>
 	</div>
@@ -33,46 +30,67 @@
 	color: #ffd39f;
 }
 
-.link-container {
-	padding: 10em 4em;
-	margin: auto;
-	display: flex;
-	flex-wrap: wrap;
-	.login-buttons {
-		max-width: 1920px;
-		width: 100%;
-		margin: auto;
-
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
-		#admin-link,
-		#user-link {
-			width: 40%;
-			margin: auto;
-			padding: 1.5em 0em;
-			text-align: center;
-			text-decoration: none;
-			border: 2px solid #ffd39f;
-			cursor: pointer;
-			transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-			h3 {
-				background-color: transparent;
-				font-weight: 500;
-				font-size: 18px;
-				letter-spacing: 30px;
-				text-indent: 30px;
-			}
-		}
-		#admin-link:hover,
-		#user-link:hover {
-			box-shadow: inset 0 150px 0 0 #ffd39f;
-		}
-		h3:hover {
-			color: #49290b;
-		}
-	}
-}
+.container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      height: calc(100vh - 98px);
+      color: #fff;
+      .content {
+        margin-top: 8%;
+        .admin-title {
+          width: 100%;
+          text-align: center;
+          letter-spacing: 40px;
+          text-indent: 40px;
+          font-weight: 500;
+          font-size: 35px;
+          color: #ff3f34;
+        }
+        .login-form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 20px;
+          .input-field {
+            width: 50%;
+            margin: 0 0 10px 0;
+            padding: .3em;
+            background-color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 26px;
+            font-weight: 500;
+            color: #fff;
+          }
+          h2 {
+            font-weight: 300;
+            font-size: 25px;
+          }
+          .login-button {
+            width: 40%;
+            background-color: #ebe8e8;
+            color: #292929;
+            border: none;
+            border-radius: 2em;
+            font-size: 30px;
+            letter-spacing: 5px;
+            text-indent: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+            transition: .1s;
+            font-weight: 600;
+          }
+          .login-button:hover {
+            background-color: #292929;
+            color: white;
+          }
+          .login-button:active {
+            background-color: white;
+          }
+        }
+      }
+    }
 .footer-container {
 	width: 100%;
 	margin: auto;
