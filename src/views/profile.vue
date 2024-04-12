@@ -66,27 +66,29 @@
             font-weight: 300;
             font-size: 25px;
           }
-          .login-button {
-            width: 40%;
-            background-color: #ebe8e8;
-            color: #292929;
-            border: none;
-            border-radius: 2em;
-            font-size: 20px;
-            letter-spacing: 5px;
-            text-indent: 5px;
-            cursor: pointer;
-            margin: 10px 0;
-            transition: .1s;
-            font-weight: 600;
-          }
-          .login-button:hover {
-            background-color: "#FFD39F";
-            color: white;
-          }
-          .login-button:active {
-            background-color: white;
-          }
+		button.login-button {
+			width: 45%;
+			padding: 0.2em;
+			border-radius: 2em;
+			border: none;
+			cursor: pointer;
+            margin-bottom: 15px;
+			background-color: #ffd39f;
+			color: #49290b;
+			font-size: 26px;
+			letter-spacing: 4px;
+			text-indent: 4px;
+			font-weight: 600;
+			transition: 0.1s;
+		}
+		button.login-button:hover {
+			color: #ffd39f;
+			background-color: #49290b;
+			border: 1px solid #ffd39f;
+		}
+		button.login-button:active {
+			background-color: #ffd39f;
+		}
         }
       }
     }
