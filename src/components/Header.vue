@@ -37,7 +37,12 @@
 						v-if="!LoggedIn"
 						><p>LOGIN</p></a
 					>
-					
+					<a
+						href="/profile"
+						:style="{ color: headerTextColor[$route.path] }"
+						v-if="LoggedIn"
+						><p>PROFIL</p></a
+					>
 				</ul>
 			</nav>
 		</div>
@@ -78,7 +83,6 @@ export default {
 		logout() {
 			localStorage.removeItem("loggedIn");
 			this.loggedIn = false;
-
 		},
 	},
 };
