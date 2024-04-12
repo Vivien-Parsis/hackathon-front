@@ -51,6 +51,11 @@ export default {
 				"/bio": "#FFD39F",
 				"/loginChoice": "#FFD39F",
 				"/projects": "#FFD39F",
+				"/projects/aymerik": "#FFD39F",
+				"/projects/misha": "#FFD39F",
+				"/projects/flavio": "#FFD39F",
+				"/projects/rachid": "#FFD39F",
+				"/projects/mathis": "#FFD39F",
 				"/loginUser": "#FFD39F",
 			},
 			headerBgColor: {
@@ -58,6 +63,11 @@ export default {
 				"/bio": "#49290B",
 				"/loginChoice": "#49290B",
 				"/projects": "#49290B",
+				"/projects/aymerik": "#49290B",
+				"/projects/misha": "#49290B",
+				"/projects/flavio": "#49290B",
+				"/projects/rachid": "#49290B",
+				"/projects/mathis": "#49290B",
 				"/loginUser": "#49290B",
 			},
 			iconColor: {
