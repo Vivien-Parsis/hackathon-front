@@ -5,11 +5,11 @@
 	></Header>
 	<div class="container">
         <div class="content">
-          <h1 class="admin-title">ESPACE PROFIL</h1>
+          <h1 class="admin-title">ESPACE PROFILE</h1>
           <form class="login-form" @submit.prevent="update">
             <h2>username</h2>
             <input type="text" class="input-field">
-            <button type="submit" class="login-button">Mettre à jour</button>
+            <button type="submit" class="login-button">Mise à jour</button>
             <button type="submit" class="login-button">Supprimer</button>
             <button type="submit" class="login-button">Déconnexion</button>
           </form>
@@ -44,7 +44,7 @@
           text-indent: 40px;
           font-weight: 500;
           font-size: 35px;
-          color: #FFD39F;
+          color: "#FFD39F";
         }
         .login-form {
           display: flex;
@@ -60,7 +60,7 @@
             border-radius: 5px;
             font-size: 26px;
             font-weight: 500;
-            color: #292929;
+            color: #000000; 
           }
           h2 {
             font-weight: 300;
@@ -72,7 +72,7 @@
             color: #292929;
             border: none;
             border-radius: 2em;
-            font-size: 30px;
+            font-size: 20px;
             letter-spacing: 5px;
             text-indent: 5px;
             cursor: pointer;
@@ -81,7 +81,7 @@
             font-weight: 600;
           }
           .login-button:hover {
-            background-color: #292929;
+            background-color: "#FFD39F";
             color: white;
           }
           .login-button:active {
