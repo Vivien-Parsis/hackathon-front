@@ -5,6 +5,7 @@ import loginPageUser from '../views/loginUser.vue'
 import bioPage from '../views/bioPage.vue'
 import loginPageChoice from '../views/loginPageChoice.vue'
 import projects from '../views/projects.vue'
+import projectsd from '../views/projectsd.vue'
 import Erreur404 from '../views/erreur404.vue'
 
 const router = createRouter({
@@ -20,6 +21,8 @@ const router = createRouter({
     { path: '/bio', component: bioPage, name: 'BioPage'},
     { path: '/loginChoice', component: loginPageChoice, name: 'LoginPageChoice'},
     { path: '/projects', component: projects, name: 'Projects'},
+    { path: '/projects/:name', component: projectsd, name: 'Projectsd'},
+
     {
       path: '/about',
       name: 'about',
