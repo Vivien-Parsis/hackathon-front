@@ -54,6 +54,7 @@ export default {
 				"/loginChoice": "#FFD39F",
 				"/projects": "#FFD39F",
 				"/loginUser": "#FFD39F",
+				"/profile": "#FFD39F",
 			},
 			headerBgColor: {
 				"/": "#FFD39F",
@@ -61,6 +62,7 @@ export default {
 				"/loginChoice": "#49290B",
 				"/projects": "#49290B",
 				"/loginUser": "#49290B",
+				"/profile": "#49290B",
 			},
 			iconColor: {
 				cream: "https://hackathon-kud9.onrender.com/assets/img/icone/logocream.png",
