@@ -3,7 +3,8 @@
 	<div class="main-content">
 		<div class="form-container">
 			<h1>ESPACE VISITEUR</h1>
-			<form class="login-form">
+
+            <form class="login-form" @submit.prevent="login">
 				<h2>LOGIN</h2>
 				<h3>username</h3>
 				<input type="text" />
@@ -17,7 +18,7 @@
 				</button>
 			</form>
 			<hr />
-			<form class="signup-form">
+			<form class="signup-form" @submit.prevent="signup">
 				<h2>SIGNUP</h2>
 				<h3>username</h3>
 				<input type="text" />
@@ -234,6 +235,7 @@
 <script>
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
+import axios from "axios";
 
 export default {
 	components: {
@@ -242,9 +244,37 @@ export default {
 	},
 	data() {
 		return {
-			headerTextColor: "#FFD39F",
-			headerBgColor: "#FFD39F",
+			username: "",
+			password: "",
 		};
+	},
+	methods: {
+		login() {
+			axios
+				.post("https://hackathon-kud9.onrender.com/user/signin", {
+					username: this.username,
+					password: this.password,
+				})
+				.then((res) => {
+					console.log(res);
+				})
+				.catch((err) => {
+					console.log(err);
+				});
+		},
+		signup() {
+			axios
+				.post("https://hackathon-kud9.onrender.com/user/signup", {
+					username: this.username,
+					password: this.password,
+				})
+				.then((res) => {
+					console.log(res);
+				})
+				.catch((err) => {
+					console.log(err);
+				});
+		},
 	},
 };
 </script>
