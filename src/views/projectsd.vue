@@ -1,25 +1,158 @@
 <template>
     <Header :textColor="headerTextColor" :bgColor="headerBgColor"></Header>
-  
     <div class="main">
       <div class="projectsd" id="projectd">
         <h1>{{ personName }}</h1>
         <div class="project-container">
 
-          <div v-for="(person, index) in people" :key="index">
+          <div v-for="(person, index) in people" 
+            :key="index">
             <div v-if="personName === person.name">
-              <div v-for="(image, i) in person.images" :key="i">
-
+              <div v-for="(image, i) in person.images" 
+                :key="i">
                 <img :src="getImageUrl(image.src)" :alt="image.alt">
               </div>
             </div>
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   
-    <Footer></Footer>
   </template>
+
+  <style scoped>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      scroll-behavior: smooth;
+      background-color: #49290b;
+      color: #ffd39f;
+    }
+    .main {
+      .projectsd {
+        max-width: 1920px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        h1 {
+          margin-bottom: 5%;
+          width: 100%;
+          font-size: 110px;
+          letter-spacing: 50px;
+          text-indent: 50px;
+          font-weight: 600;
+          text-align: center;
+        }
+        .project-container {
+          div {
+            div {
+              display: flex;
+              flex-wrap: wrap;
+              div {
+                width: 40%;
+                margin: 5%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                img {
+                  object-fit: contain;
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+      .footer-container {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 1919px) {
+      .main {
+        .projectsd {
+          max-width: 1280px;
+          h1 {
+            margin-bottom: ;
+            font-size: 75px;
+            letter-spacing: ;
+            text-indent: ;
+            font-weight: ;
+          }
+          .project-container {
+            div {
+              div {
+                div {
+                  width: ;
+                  margin-bottom: ;
+                  img {
+                    width: 80%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1279px) {
+      .main {
+        .projectsd {
+          max-width: 800px;
+          h1 {
+            margin-bottom: ;
+            font-size: 55px;
+            letter-spacing: 25px;
+            text-indent: 25px;
+            font-weight: ;
+          }
+          .project-container {
+            div {
+              div {
+                div {
+                  width: ;
+                  margin-bottom: 1%;
+                  img {
+                    width: 80%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 799px) {
+      .main {
+        .projectsd {
+          max-width: 360px;
+          h1 {
+            margin-bottom: ;
+            font-size: 25px;
+            letter-spacing: 12px;
+            text-indent: 12px;
+            font-weight: ;
+          }
+          .project-container {
+            div {
+              div {
+                div {
+                  width: 50%;
+                  margin-bottom: 5%;
+                  img {
+                    width: 80%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  </style>
   
   <script>
   import Header from '../components/Header.vue';
